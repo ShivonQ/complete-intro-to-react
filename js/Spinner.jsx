@@ -1,7 +1,7 @@
 // @flow
 
-import React from 'react'
-import styled, {keyframes} from 'styled-components'
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
 const spin = keyframes`
 from {
@@ -9,10 +9,10 @@ from {
     }
     to {
         transform:rotate(360deg);
-        }`
+        }`;
 
 const Image = styled.img`animation: ${spin} 4s infinite linear;`;
 
 const Spinner = () => <Image src="/public/img/loading.png" alt="loading indicator" />;
 
-export default Spinner
+export default Spinner;
